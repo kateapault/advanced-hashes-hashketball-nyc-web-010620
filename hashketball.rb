@@ -191,12 +191,12 @@ def player_stats(player)
     team[1][:players]
   end
   p players
-  selected_player_info = players.find do |players_on_team| 
-    players_on_team.map {|guy| guy[:player_name] == player}
-  end
+#  selected_player_info = players.find do |players_on_team| 
+#    players_on_team.map {|guy| guy[:player_name] == player}
+#  end
   
-  p selected_player_info[0].delete(:player_name)
-  p selected_player_info[0]
+#  p selected_player_info[0].delete(:player_name)
+#  p selected_player_info[0]
 end
 
 def big_shoe_rebounds
