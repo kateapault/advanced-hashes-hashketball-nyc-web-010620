@@ -138,7 +138,7 @@ def get_player_and_stat(stat_you_want,key='player')
       end
     end
   end
-  p info.join(',')
+  
 end
 
 def num_points_scored(player)
