@@ -124,7 +124,7 @@ def game_hash
   
 end
 
-def get_player_and_stat(stat_you_want,key='player')
+def get_player_and_stat#(stat_you_want,key='player')
   # returns hash of player_name => data_value
   # to return hash of data_value => player_name, enter 'data' for second arg
   
@@ -177,5 +177,4 @@ def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
 end
 
-game_info = game_hash
-game_info.map {|team| p team[1][:colors]}
+get_player_and_stat
