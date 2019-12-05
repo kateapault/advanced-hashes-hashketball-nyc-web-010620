@@ -178,9 +178,8 @@ def player_numbers(team_name_string)
   # returns array of player numbers given team name
   
   game_info = game_hash
-  selected_team = game_info.find {|team| p team[1][:team_name] == team_name_string}
-  p selected_team
-  p selected_team.map {|player| player[:number] }
+  selected_team = game_info.find {|team| team[1][:team_name] == team_name_string}
+  p selected_team[0].map {|player| player[:number] }
   
 end  
   
