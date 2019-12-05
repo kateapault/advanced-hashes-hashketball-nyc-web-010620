@@ -145,7 +145,6 @@ def team_colors(team)
   end
   teams_and_colors.to_h
   p teams_and_colors
-  teams_and_colors[team]
 end
 
 def team_names
