@@ -223,7 +223,7 @@ end
 def winning_team
   players_and_points_scored = get_player_and_stat(:points)
   teams = team_names
-  if players_and_points_scored[0...5] >> players_and_points_scored[5...10]
+  if players_and_points_scored[0...5] > players_and_points_scored[5...10]
     return teams[0]
   else
     return teams[1]
