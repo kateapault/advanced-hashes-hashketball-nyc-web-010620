@@ -196,7 +196,7 @@ def player_stats(player)
   
   right_player = players_list.select {|guy| guy[:player_name] == player}
   right_player[0].delete(:player_name)
-  p right_player[0]
+  right_player[0]
 
 end
 
@@ -209,4 +209,3 @@ def big_shoe_rebounds
   
 end
 
-get_player_and_stat(:number)
