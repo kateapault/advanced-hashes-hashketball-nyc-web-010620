@@ -154,7 +154,7 @@ end
 def shoe_size
   # knows the shoe size of each player
   
-  
+  get_player_and_stat(:shoe)
 end  
 
 
