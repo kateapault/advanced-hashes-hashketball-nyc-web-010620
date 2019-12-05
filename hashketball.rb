@@ -192,7 +192,7 @@ def player_stats(player)
   end
   
   players_list = []
-  players.each {|players_on_team| players_list.push(players_on_team) }
+  players.each {|players_by_team| players_by_team.each {|single_player| players_list.push(single_player)} }
   
   p players_list
   
