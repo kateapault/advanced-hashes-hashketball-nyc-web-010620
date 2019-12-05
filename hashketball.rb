@@ -131,10 +131,14 @@ def get_player_and_stat(stat_you_want,key='player')
   game_info = game_hash
   info = game_info.map do |team|
     team[1][:players].map do |player|
-      [player[:player_name],player[stat_you_want]]
+      if key == 'player'
+        [player[:player_name], player[stat_you_want]]
+      else
+        [player[stat_you_want], player[:player_name]]
+      end
     end
   end
-  p info
+  p info.to_h
 end
 
 def num_points_scored(player)
@@ -176,5 +180,3 @@ end
 def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
 end
-
-get_player_and_stat(:steals)
