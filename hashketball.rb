@@ -192,9 +192,9 @@ def player_stats(player)
   end
   selected_player_info = []
   players.each do |players_on_team| 
-    players_on_team.select {|guy| pp guy[:player_name] == player}
+    right-player = players_on_team.select {|guy| pp guy[:player_name] == player}
   end
-  selected_player_info
+  p right-player
 #  p selected_player_info[0].delete(:player_name)
 #  p selected_player_info[0]
 end
