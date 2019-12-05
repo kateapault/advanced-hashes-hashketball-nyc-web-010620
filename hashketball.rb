@@ -223,12 +223,10 @@ end
 def winning_team
   players_and_points_scored = get_player_and_stat(:points)
   teams = team_names
-  p players_and_points_scored.to_a
-#  if players_and_points_scored[0...5] > players_and_points_scored[5...10]
-#    return teams[0]
-#  else
-#    return teams[1]
-#  end
+  p players_and_points_scored.to_a!
+  team1 = players_and_points_scored[0...5]
+  team2 = players_and_points_scored[5...10]
+
 end 
 
 def player_with_longest_name
