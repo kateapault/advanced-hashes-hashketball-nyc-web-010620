@@ -146,7 +146,8 @@ end
 def num_points_scored(player)
   # knows the number of points scored by each player
   
-  game_info = game_hash
+  all_points_scored = player_and_stats(:points)
+  all_points_scored[player]
 
 end
 
