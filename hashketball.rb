@@ -153,6 +153,8 @@ end
 
 def shoe_size
   # knows the shoe size of each player
+  
+  
 end  
 
 
