@@ -230,8 +230,14 @@ def winning_team
   players_and_points_scored = players_and_points_scored.to_a
   team1 = players_and_points_scored[0...5]
   team2 = players_and_points_scored[5...10]
-  team1_points = team1.reduce(0) {|memo, playerpoints| memo += playerpoints[1]}
-  team2_points = team2.reduce(0) {|memo, playerpoints| memo += playerpoints[1]}
+  team1_points = get_team_points(team1)
+  team2_points = get_team_points(team2)
+  
+  if team1_points > team2_points
+    return teams[0]
+  else 
+    return teams[1]
+  end
 end 
 
 def player_with_longest_name
