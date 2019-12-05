@@ -136,15 +136,15 @@ def team_colors
 end
 
 def team_names
-  # returns the team names (FAILED - 4)
+  # returns the team names
 end  
 
 def player_numbers
-  # returns the player jersey numbers (FAILED - 5)
+  # returns the player jersey numbers
 end  
   
 def player_stats
-  # returns all stats for a given player (FAILED - 6)
+  # returns all stats for a given player
 end
 
 def big_shoe_rebounds
