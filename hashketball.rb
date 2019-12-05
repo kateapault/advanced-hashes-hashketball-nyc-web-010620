@@ -191,6 +191,10 @@ def player_stats(player)
     p team[1][:players]
   end
   
+  player = players.find do |players_on_team| 
+    p players_on_team
+  end
+  
 end
 
 def big_shoe_rebounds
