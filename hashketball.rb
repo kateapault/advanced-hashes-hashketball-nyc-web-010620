@@ -141,7 +141,7 @@ def team_colors(team)
   # knows the Brooklyn Nets colors are Black and White
   game_info = game_hash
   teams_and_colors = game_info.map do |team|
-    [team[:team_name],team[:team_colors]]  
+    [team[:team_name],team[:colors]]  
   end
   teams_and_colors[team]
 end
@@ -163,4 +163,4 @@ def big_shoe_rebounds
 end
 
 game_info = game_hash
-game_info.map {|team| puts team}
+game_info.map {|team| puts team[:color]}
