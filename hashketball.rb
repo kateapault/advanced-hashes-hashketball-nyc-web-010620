@@ -192,7 +192,7 @@ def player_stats(player)
   end
   p players
   selected_player_info = players.find do |players_on_team| 
-    players_on_team.find {|guy| guy[:player_name] == player}
+    players_on_team.map {|guy| guy[:player_name] == player}
   end
   
   p selected_player_info[0].delete(:player_name)
