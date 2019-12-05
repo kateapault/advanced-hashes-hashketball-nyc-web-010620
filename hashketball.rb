@@ -144,7 +144,7 @@ def team_colors(team)
     [team[1][:team_name],team[1][:colors]]  
   end
   teams_and_colors.to_h
-  puts teams_and_colors
+  p teams_and_colors
   teams_and_colors[team]
 end
 
