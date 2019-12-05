@@ -143,8 +143,8 @@ def team_colors(team)
   teams_and_colors = game_info.map do |team|
     [team[1][:team_name], team[1][:colors]]  
   end
-  teams_and_colors.to_h
   p teams_and_colors
+  teams_and_colors.to_h
 end
 
 def team_names
