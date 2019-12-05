@@ -190,7 +190,7 @@ def player_stats(player)
   players = game_info.map do |team|
     team[1][:players]
   end
-  p players
+  players
   selected_player_info = players.find do |players_on_team| 
     players_on_team.map {|guy| p guy}
   end
