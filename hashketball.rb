@@ -226,7 +226,7 @@ def winning_team
   p players_and_points_scored = players_and_points_scored.to_a
   team1 = players_and_points_scored[0...5].to_h
   team2 = players_and_points_scored[5...10].to_h
-  p team1.reduce(memo) {|memo, playerpoints| memo += playerpoints[1]}
+  p team1.reduce({}) {|memo, playerpoints| memo += playerpoints[1]}
 end 
 
 def player_with_longest_name
