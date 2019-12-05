@@ -228,7 +228,7 @@ def winning_team
 #    return teams[0]
 #  else
 #    return teams[1]
-  end
+#  end
 end 
 
 def player_with_longest_name
