@@ -1,5 +1,6 @@
 def game_hash
   
+  ### HOME TEAM PLAYERS ###
   anderson = { player_name: "Alan Anderson",
     number: "0",
     shoe: 16,
@@ -52,12 +53,67 @@ def game_hash
     }
   
   
+  ### AWAY TEAM PLAYERS ###
+  adrien = { player_name: "Jeff Adrien",
+    number: "4",
+    shoe: 18,
+    points: 10,
+    rebounds: 1,
+    assists: 1,
+    steals: 2,
+    blocks: 7,
+    slam_dunks: 2
+    }
+  biyombo = { player_name: "Bismack Biyombo",
+    number: "0",
+    shoe: 16,
+    points: 12,
+    rebounds: 4,
+    assists: 7,
+    steals: 22,
+    blocks: 15,
+    slam_dunks: 10
+    }
+  diop = { player_name: "DeSagna Diop",
+    number: "2",
+    shoe: 14,
+    points: 24,
+    rebounds: 12,
+    assists: 12,
+    steals: 4,
+    blocks: 5,
+    slam_dunks: 5
+    }
+    adrien = { player_name: "",
+    number: "",
+    shoe: ,
+    points: ,
+    rebounds: ,
+    assists: ,
+    steals: ,
+    blocks: ,
+    slam_dunks: 
+    }
+    adrien = { player_name: "",
+    number: "",
+    shoe: ,
+    points: ,
+    rebounds: ,
+    assists: ,
+    steals: ,
+    blocks: ,
+    slam_dunks: 
+    }
+  
+  
+  
+  ### GAME HASH ###
   
   {
   home: {
-    team_name: "",
-    colors: ["",""],
-    players: []
+    team_name: "Brooklyn Nets",
+    colors: ["Black","White"],
+    players: [anderson,evans,lopez,plumlee,terry]
     },
   away: {
     team_name: "",
