@@ -124,18 +124,14 @@ def game_hash
   
 end
 
-def get_player_and_stat(stat_you_want,key='player')
+def get_player_and_stat(first_stat,second_stat)
   # returns hash of player_name => data_value
   # to return hash of data_value => player_name, enter 'data' for second arg
   
   game_info = game_hash
   info = game_info.map do |team|
-    team[1][:players].map do |player|
-      if key == 'player'
-        [player[:player_name], player[stat_you_want]]
-      else
-        [player[stat_you_want], player[:player_name]]
-      end
+    team[1][first_stat].map do |player|
+      [player[first_stat], player[second_stat]]
     end
   end
   player_and_stats = []
