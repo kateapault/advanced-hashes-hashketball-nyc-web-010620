@@ -223,7 +223,7 @@ end
 def winning_team
   players_and_points_scored = get_player_and_stat(:points)
   teams = team_names
-  p players_and_points_scored.to_a!
+  p players_and_points_scored = players_and_points_scored.to_a
   team1 = players_and_points_scored[0...5]
   team2 = players_and_points_scored[5...10]
   p team1.reduce({}) {|memo, playerpoints| memo += playerpoints[1]}
