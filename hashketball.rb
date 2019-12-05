@@ -156,7 +156,8 @@ def team_colors(team)
 end
 
 def team_names
-  
+  game_info = game_hash
+  game_info.map {|team| team["team_name"}
 end  
 
 def player_numbers
