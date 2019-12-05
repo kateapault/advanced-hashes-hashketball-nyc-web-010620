@@ -215,11 +215,14 @@ end
 bonus
 def most_points_scored
    # returns Ben Gordon 
+  players_points = get_player_and_stat(:points) 
+  players_points.max_by {|player, score| score}
 end
 
 def winning_team
-    returns the Brooklyn Nets (FAILED - 2)
+    #returns the Brooklyn Nets (FAILED - 2)
 end 
+
 def player_with_longest_name
-    returns Bismack Biyombo (FAILED - 3)
+    #returns Bismack Biyombo (FAILED - 3)
 end
