@@ -175,16 +175,20 @@ def team_names
 end  
 
 def player_numbers(player)
+  # returns array of player numbers given team name
   numbers = get_player_and_stat(:number)
   numbers[player]
 end  
   
-def player_stats
+def player_stats(player)
   # returns all stats for a given player
+  
 end
 
 def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
+  shoes = get_player_and_stat(:shoe)
+  
 end
 
 get_player_and_stat(:number)
