@@ -187,7 +187,6 @@ def player_stats(player)
   # returns all stats for a given player
   game_info = game_hash
   
-  player = game_info.find 
   
 end
 
