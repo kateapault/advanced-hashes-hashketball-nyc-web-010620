@@ -124,14 +124,18 @@ def game_hash
   
 end
 
-def get_player_and_stat(first_stat,second_stat)
+def get_player_and_stat(stat_you_want,key='player')
   # returns hash of player_name => data_value
   # to return hash of data_value => player_name, enter 'data' for second arg
   
   game_info = game_hash
   info = game_info.map do |team|
-    team[1][:player].map do |player|
-      [player[first_stat], player[second_stat]]
+    team[1][:players].map do |player|
+      if key == 'player'
+        [player[:player_name], player[stat_you_want]]
+      else
+        [player[stat_you_want], player[:player_name]]
+      end
     end
   end
   player_and_stats = []
@@ -142,8 +146,7 @@ end
 def num_points_scored(player)
   # knows the number of points scored by each player
   
-  all_points_scored = get_player_and_stat(:points)
-  all_points_scored[player]
+  all_points_scored = player_and_stats()
 
 end
 
@@ -180,4 +183,4 @@ def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
 end
 
-get_player_and_stat(:player_name,:number)
+get_player_and_stat(:number)
