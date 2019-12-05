@@ -252,6 +252,11 @@ end
 def long_name_steals_a_ton?
   player = player_with_longest_name
   players_steals = get_player_and_stat(:steals)
-  p players_steals.sort_by {|player, steals| steals}
-  
+  sorted_steals = players_steals.sort_by {|player, steals| steals}
+  top_half_of_stealers = sorted_steals.reverse[0...5].to_h
+  if top_half_of_stealers.include?(player)
+    return true
+  else
+    return false
+  end
 end
