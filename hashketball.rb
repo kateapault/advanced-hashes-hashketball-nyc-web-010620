@@ -196,7 +196,7 @@ def player_stats(player)
   
   p players_list
   
-  right_player = players_list.select {|guy| pp guy[:player_name] == player}
+  right_player = players_list.select {|guy| guy[:player_name] == player}
   p right-player
 #  p selected_player_info[0].delete(:player_name)
 #  p selected_player_info[0]
