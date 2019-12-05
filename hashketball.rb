@@ -130,7 +130,7 @@ def get_player_and_stat(first_stat,second_stat)
   
   game_info = game_hash
   info = game_info.map do |team|
-    team[1][first_stat].map do |player|
+    team[1][:player].map do |player|
       [player[first_stat], player[second_stat]]
     end
   end
