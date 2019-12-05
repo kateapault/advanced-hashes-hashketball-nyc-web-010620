@@ -248,3 +248,10 @@ def player_with_longest_name
   sorted_players.reverse[0]
   
 end
+
+def long_name_steals_a_ton?
+  player = player_with_longest_name
+  players_steals = get_player_and_stat(:steals)
+  p players_steals.sort_by {|player, steals| steals}
+  
+end
