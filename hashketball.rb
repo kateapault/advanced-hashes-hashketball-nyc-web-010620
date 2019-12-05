@@ -191,7 +191,7 @@ def big_shoe_rebounds
   biggest_shoe = shoes.max_by {|player,shoe| shoe}
   
   rebounds = get_player_and_stat(:rebounds)
-  rebounds[biggest_shoe]
+  rebounds[biggest_shoe.keys[0]]
   
 end
 
