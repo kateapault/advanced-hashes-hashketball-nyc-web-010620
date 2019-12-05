@@ -220,7 +220,7 @@ def most_points_scored
   highest_scoring_player[0]
 end
 
-def get_team_points(player_points_hash)
+def get_team_points(player_points_array)
   player_points_array.reduce(0) {|memo, playerpoints| memo += playerpoints[1]}
 end
 
