@@ -162,4 +162,5 @@ def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
 end
 
-
+game_info = game_hash
+game_info.map {|team| puts team}
