@@ -180,7 +180,7 @@ def player_numbers(team_name_string)
   game_info = game_hash
   selected_team = game_info.find {|team| team[1][:team_name] == team_name_string}
   p selected_team[1]
-  p selected_team[1].map {|player| player[:number] }
+  p selected_team[1][:players].map {|player| player[:number] }
   
 end  
   
