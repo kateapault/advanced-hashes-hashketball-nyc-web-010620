@@ -190,10 +190,12 @@ def player_stats(player)
   players = game_info.map do |team|
     team[1][:players]
   end
-  selected_player_info = []
-  players.each do |players_on_team| 
-    right-player = players_on_team.select {|guy| pp guy[:player_name] == player}
-  end
+  
+  players_list = []
+  players.each {|players_on_team| players_list.push(players_on_team) }
+  
+  
+  right_player = players_list.select {|guy| pp guy[:player_name] == player}
   p right-player
 #  p selected_player_info[0].delete(:player_name)
 #  p selected_player_info[0]
