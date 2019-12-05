@@ -172,7 +172,7 @@ def team_names
 end  
 
 def player_numbers
-  # returns the player jersey numbers
+  get_player_and_stat
 end  
   
 def player_stats
