@@ -209,3 +209,17 @@ def big_shoe_rebounds
   
 end
 
+
+#### BONUS #####
+
+bonus
+def most_points_scored
+   # returns Ben Gordon 
+end
+
+def winning_team
+    returns the Brooklyn Nets (FAILED - 2)
+end 
+def player_with_longest_name
+    returns Bismack Biyombo (FAILED - 3)
+end
