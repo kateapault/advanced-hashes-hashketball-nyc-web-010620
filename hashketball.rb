@@ -194,6 +194,7 @@ def player_stats(player)
   players_list = []
   players.each {|players_on_team| players_list.push(players_on_team) }
   
+  p players_list
   
   right_player = players_list.select {|guy| pp guy[:player_name] == player}
   p right-player
