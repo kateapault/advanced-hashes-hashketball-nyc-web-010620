@@ -191,9 +191,11 @@ def player_stats(player)
     team[1][:players]
   end
   
-  selected_player = players.find do |players_on_team| 
+  selected_player_info = players.find do |players_on_team| 
     p players_on_team.find {|guy| guy[:player_name] == player}
   end
+  
+  selected_player_info[0].
   
 end
 
