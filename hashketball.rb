@@ -216,7 +216,7 @@ end
 def most_points_scored
    # returns Ben Gordon 
   players_and_points_scored = get_player_and_stat(:points) 
-  highest_scoring_player = players__and_points_scored.max_by {|player, score| score}
+  highest_scoring_player = players_and_points_scored.max_by {|player, score| score}
   highest_scoring_player[0]
 end
 
