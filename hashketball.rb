@@ -140,6 +140,7 @@ def get_player_and_stat(stat_you_want,key='player')
   end
   player_and_stats = []
   info.each {|info_by_team| info_by_team.each {|info_by_player| player_and_stats.push(info_by_player) }}
+  p player_and_stats.to_h
 end
 
 def num_points_scored(player)
