@@ -221,7 +221,13 @@ def most_points_scored
 end
 
 def winning_team
-    #returns the Brooklyn Nets (FAILED - 2)
+  players_and_points_scored = get_player_and_stat(:points)
+  teams = team_names
+  if players_and_points_scored[0...5] >> players_and_points_scored[5...10]
+    return teams[0]
+  else
+    return teams[1]
+  end
 end 
 
 def player_with_longest_name
