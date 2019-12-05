@@ -244,5 +244,5 @@ def player_with_longest_name
     #returns Bismack Biyombo (FAILED - 3)
   player_array = get_player_and_stat(:shoe)
   players = player_array.map {|info| info[0]}
-  p players
+  players.sort_by
 end
