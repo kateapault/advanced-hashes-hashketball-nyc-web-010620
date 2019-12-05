@@ -124,11 +124,19 @@ def game_hash
   
 end
 
+def get_player_and_stat(stat_you_want,key='player')
+  # returns hash of player_name => data_value
+  # to return hash of data_value => player_name, enter 'data' for second arg
+  
+  game_info = game_hash
+  
+  
+end
+
 def num_points_scored(player)
   # knows the number of points scored by each player
   
   game_info = game_hash
-  
   
 end
 
@@ -136,6 +144,7 @@ end
 def shoe_size
   # knows the shoe size of each player
 end  
+
 
 def team_colors(team)
   # knows the Brooklyn Nets colors are Black and White
@@ -147,7 +156,7 @@ def team_colors(team)
 end
 
 def team_names
-  # returns the team names
+  
 end  
 
 def player_numbers
