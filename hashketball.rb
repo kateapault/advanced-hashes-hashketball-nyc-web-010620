@@ -163,4 +163,4 @@ def big_shoe_rebounds
 end
 
 game_info = game_hash
-game_info.map {|team| puts team[:color]}
+game_info.map {|team| p team}
