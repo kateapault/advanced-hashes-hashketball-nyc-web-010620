@@ -212,7 +212,7 @@ end
 
 #### BONUS #####
 
-bonus
+
 def most_points_scored
    # returns Ben Gordon 
   players_points = get_player_and_stat(:points) 
