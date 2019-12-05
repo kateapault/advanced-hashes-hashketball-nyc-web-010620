@@ -158,7 +158,7 @@ end
 def team_names
   game_info = game_hash
   teams = game_info.map {|team| team[1][:team_name]}
-  p teams
+  teams
 end  
 
 def player_numbers
