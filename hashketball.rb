@@ -174,10 +174,12 @@ def team_names
   p teams
 end  
 
-def player_numbers(player)
+def player_numbers(team)
   # returns array of player numbers given team name
-  numbers = get_player_and_stat(:number)
-  numbers[player]
+  
+  game_info = game_hash
+  
+  
 end  
   
 def player_stats(player)
