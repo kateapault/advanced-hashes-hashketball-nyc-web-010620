@@ -196,7 +196,7 @@ def player_stats(player)
   end
   
   selected_player_info[0].delete(:player_name)
-  selected_player_info
+  p selected_player_info[0]
 end
 
 def big_shoe_rebounds
