@@ -143,9 +143,8 @@ def team_colors(team)
   teams_and_colors = game_info.map do |team|
     [team[1][:team_name], team[1][:colors]]  
   end
-  p teams_and_colors
-  p teams_and_colors[0]
-  teams_and_colors.to_h
+  teams_colors_hash = teams_and_colors.to_h
+  p teams_colors_hash
 end
 
 def team_names
