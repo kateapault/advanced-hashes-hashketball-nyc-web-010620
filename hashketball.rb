@@ -144,7 +144,7 @@ def team_colors(team)
     [team[1][:team_name], team[1][:colors]]  
   end
   teams_colors_hash = teams_and_colors.to_h
-  p "teams_colors_hash: #{teams_colors_hash}"
+  p teams_colors_hash
 end
 
 def team_names
