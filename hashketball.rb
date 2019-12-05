@@ -187,6 +187,9 @@ def player_stats(player)
   # returns all stats for a given player
   game_info = game_hash
   
+  players = game_info.map do |team|
+    p team
+  end
   
 end
 
