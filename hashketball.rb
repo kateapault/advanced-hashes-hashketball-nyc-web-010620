@@ -174,8 +174,9 @@ def team_names
   p teams
 end  
 
-def player_numbers
-  get_player_and_stat
+def player_numbers(player)
+  numbers = get_player_and_stat(:number)
+  numbers[player]
 end  
   
 def player_stats
