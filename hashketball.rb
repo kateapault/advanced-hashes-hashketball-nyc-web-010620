@@ -220,7 +220,7 @@ def most_points_scored
   highest_scoring_player[0]
 end
 
-def get_team_points(player_points_array)
+def get_team_points(player_points_hash)
   player_points_array.reduce(0) {|memo, playerpoints| memo += playerpoints}
 end
 
@@ -228,8 +228,8 @@ def winning_team
   players_and_points_scored = get_player_and_stat(:points)
   teams = team_names
   players_and_points_scored = players_and_points_scored.to_a
-  team1 = players_and_points_scored[0...5]
-  team2 = players_and_points_scored[5...10]
+  team1 = players_and_points_scored[0...5].to_h
+  team2 = players_and_points_scored[5...10].to_h
   team1_points = get_team_points(team1)
   team2_points = get_team_points(team2)
   
