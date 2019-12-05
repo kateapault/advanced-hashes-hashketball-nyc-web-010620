@@ -125,9 +125,27 @@ def game_hash
 end
 
 def num_points_scored
-  #
+  # knows the number of points scored by each player
+end
+def shoe_size
+  # knows the shoe size of each player
+end  
+
+def team_colors
+  # knows the Brooklyn Nets colors are Black and White
 end
 
+def team_names
+  # returns the team names (FAILED - 4)
+end  
+
+def player_numbers
+  # returns the player jersey numbers (FAILED - 5)
+end  
+  
+def player_stats
+  # returns all stats for a given player (FAILED - 6)
+end
 
 
 
