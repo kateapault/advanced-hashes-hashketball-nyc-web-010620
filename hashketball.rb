@@ -137,7 +137,11 @@ def num_points_scored(player)
   # knows the number of points scored by each player
   
   game_info = game_hash
-  
+  info = game_info.map do |team|
+    team[1][:players].map do |player|
+      p player
+    end
+  end
 end
 
 
