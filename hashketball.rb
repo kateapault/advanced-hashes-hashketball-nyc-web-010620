@@ -138,7 +138,7 @@ def get_player_and_stat(stat_you_want,key='player')
       end
     end
   end
-  player_and_stats = []
+  player_and_stats = []           # flattens out AoAoH to AoH
   info.each {|info_by_team| info_by_team.each {|info_by_player| player_and_stats.push(info_by_player) }}
   player_and_stats.to_h
 end
@@ -191,16 +191,13 @@ def player_stats(player)
     team[1][:players]
   end
   
-  players_list = []
+  players_list = []               # flattens out AoAoH to AoH
   players.each {|players_by_team| players_by_team.each {|single_player| players_list.push(single_player)} }
-  
-  players_list
   
   right_player = players_list.select {|guy| guy[:player_name] == player}
   right_player[0].delete(:player_name)
   p right_player[0]
-#  p selected_player_info[0].delete(:player_name)
-#  p selected_player_info[0]
+
 end
 
 def big_shoe_rebounds
