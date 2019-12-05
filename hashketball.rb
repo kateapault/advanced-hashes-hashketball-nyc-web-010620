@@ -124,9 +124,10 @@ def game_hash
   
 end
 
-def num_points_scored
+def num_points_scored(player)
   # knows the number of points scored by each player
   
+  game_info = game_hash
   
   
 end
@@ -136,8 +137,13 @@ def shoe_size
   # knows the shoe size of each player
 end  
 
-def team_colors
+def team_colors(team)
   # knows the Brooklyn Nets colors are Black and White
+  game_info = game_hash
+  teams_and_colors = game_info.map do |team|
+    [team[:team_name],team[:team_colors]]  
+  end
+  teams_and_colors[team]
 end
 
 def team_names
