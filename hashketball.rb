@@ -188,7 +188,7 @@ def player_stats(player)
   game_info = game_hash
   
   players = game_info.map do |team|
-    p team
+    p team[1]
   end
   
 end
