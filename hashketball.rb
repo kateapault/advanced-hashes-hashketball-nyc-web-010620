@@ -116,9 +116,9 @@ def game_hash
     players: [anderson,evans,lopez,plumlee,terry]
     },
   away: {
-    team_name: "",
-    colors: ["",""],
-    players: []
+    team_name: "Charlotte Hornets",
+    colors: ["Turquoise","Purple"],
+    players: [adrien,biyombo,diop,gordon,walker]
     }
   }
   
