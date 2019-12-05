@@ -131,7 +131,7 @@ def get_player_and_stat(stat_you_want,key='player')
   game_info = game_hash
   info = game_info.map do |team|
     team[1][:players].map do |player|
-      [player[:player],player[stat_you_want]]
+      [player[:player_name],player[stat_you_want]]
     end
   end
   p info
