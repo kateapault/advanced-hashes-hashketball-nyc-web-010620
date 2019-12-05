@@ -1,6 +1,6 @@
 def game_hash
   
-  { player_name: "Alan Anderson",
+  [{ player_name: "Alan Anderson",
     number: "0",
     shoe: 16,
     points: 22,
@@ -45,7 +45,7 @@ def game_hash
     steals: 4,
     blocks: 11,
     slam_dunks: 1
-  } 
+  }]
   
   
   
