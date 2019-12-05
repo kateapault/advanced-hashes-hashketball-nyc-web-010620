@@ -180,4 +180,4 @@ def big_shoe_rebounds
   # returns the number of rebounds of the player with the biggest shoe size
 end
 
-get_player_and_stat(:number)
+get_player_and_stat(:player_name,:number)
